@@ -20,7 +20,8 @@ body{
 .sec{
     margin-left: 300px;
     margin-right: 100px;
-    height: 600px;
+    min-height: 600px;
+    max-height: auto;
     text-align: center;
     position: relative;
     font-family: Courier New, monospace;
