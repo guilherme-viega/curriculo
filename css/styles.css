@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.geral{
+    width: 100%;
+    height: auto;
+    color: white;
+    background:linear-gradient(90deg, rgba(2,0,.6,1)0%, rgba(9,9,121,1)35%, rgba(0,212,255,1)100% );
+    background-size: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+}
+
+.sec{
+    margin-left: 300px;
+    margin-right: 100px;
+    height: 600px;
+    text-align: center;
+    position: relative;
+    font-family: Courier New, monospace;
+}
+
+div .section h2{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 25px;
+}
+
+.nome{
+    font-size: 30px;
+}
+
+#link{
+    border: 3px solid white;
+    border-radius: 15px;
+    color:white;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:  100px;
+    text-decoration: none;
+}
+
+#link:hover{
+    width: 150px;
+    border-color: #1E90FF;
+    color: #1E90FF;
+}
+.menu{
+    display:block;
+    width: 20%;
+	height: 100%;
+	position: fixed;
+	background: transparent;
+    z-index: 1000;
+}
+
+
+.menu a{
+    margin-right: 45px;
+    color: white;
+	opacity: 0.4;
+	font-size: 19px;
+	display: block;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+.menu a.selected:hover{
+	opacity: 1;
+	color: white;
+    cursor: pointer;
+}
+
+.image{
+	text-align: center;
+}
+
+.image img{
+	width: 70%;
+	border: 8px solid #5187d8;
+	border-radius: 50%;
+}
+.box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-position: transparent;
+    border: 6px solid rgba(255,255,255,0.8);
+}
+
+.box div:nth-child(1){
+    top:12%;
+    left:42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+    top:70%;
+    left:50%;
+    animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+    top:17%;
+    left:68%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+    top:65%;
+    left:80%;
+    animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(5){
+    top:28%;
+    left:93%;
+    animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(6){
+    top:96%;
+    left:17%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(7){
+    top:48%;
+    left:11%;
+    animation: animate 13s linear infinite;
+}
+
+.box div:nth-child(8){
+    top:55%;
+    left:37%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(9){
+    top:78%;
+    left:15%;
+    animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(10){
+    top:9%;
+    left:59%;
+    animation: animate 16s linear infinite;
+}
+.card-contatos{
+    font-size: 40px;
+    color: white;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
